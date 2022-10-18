@@ -1,0 +1,133 @@
+\documentclass{report}
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Quiz Three\\Datastructures}\\Linked List}
+\author{\huge{Smita Kadam}}
+\date{18-Oct-2022}
+
+\begin{document}
+\maketitle
+\qs{}{
+Below one is add_first() functionality code for empty Doubly CircularLinked list. Find the correct statement to replace ????
+	head = newnode;
+	tail = newnode;
+	tail ->next = head;
+	????
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. tail->next->next = tail
+2. \underline{head->prev = tail;}
+3. tail->prev = head;
+4. head->prev = NULL;
+\qs{}{
+what does following function do of given Linked List with first node as head?
+void function(struct node* head)
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. Print all linked lists
+2. \underline{Prints all linked list in reverse order}
+3. Prints alternate Linked List
+4. Prints alternate linked list reverse order
+\qs{}{
+what is wrong about singly linked list?
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. Singly linked list is a collection of nodes linked together in a sequential way where each node of singly linked list contains a data field
+2. singly list is an address field which contains the reference of the next node.
+3. Singly linked list can contain multiple data fields but should contain at least single address field pointing to its connected next node.
+4. \underline{None Of Above}
+\qs{
+In a singly circular linked list, insertion of a node at first position requires modification of a?
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. One pointer
+2. \underline{Two pointer}
+3. Three pointer
+4. None
+
+\qs{}{
+following code define in c programming language
+struct node
+{
+int data;
+struct node * next;
+}
+typedef struct node NODE;
+NODE *ptr;
+Which of the following c code is used to create new node?
+}
+\setlength{\parindent}{0pt}
+1. \underline{ptr=(NODE*)malloc(sizeof(NODE));}
+2. ptr=(NODE*)malloc(NODE);
+3. ptr=(NODE*)malloc(sizeof(NODE*));
+4. ptr=(NODE)malloc(sizeof(NODE));
+\qs{}{
+Which of the following is false about a doubly linked list?
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. We can navigate in both the directions
+2. It requires more space than a singly linked list
+3. The insertion and deletion of a node take a bit longer
+4. \underline{Implementing a doubly linked list is easier than singly linked list}
+\pagebreak
+\qs{}{
+which statement is True about circular linked list?
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. Entire list can be traversed from any node.
+2. Circular lists are the required data structure when we want a list to be accessed in a circle or loop.
+3. Despite of being singly circular linked list we can easily traverse to its previous node, which is not possible in singly linked list.
+4. \underline{All of Above}
+
+\qs{}{
+Which of the following data structure/s requires extra space to store n no. of elements?
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. Array
+2. Structure
+3. \underline{LinkedList}
+4. Union
+\qs{}{
+How do you calculate the pointer difference in a memory efficient doubly linked list?
+}
+\setlength{\parindent}{0pt}
+Options:\\
+1. head xor tail
+2. \underline{pointer to previous node xor pointer to next node}
+3. pointer to previous node – pointer to next node
+4. pointer to next node – pointer to previous node
+\qs{}{
+Consider the following doubly linear linked list and find the output of given code: 
+	head								tail	
+	1	<-->	2	<-->	3	<-->	4	<-->	5
+        4000		2000		2800		4800		3000
+
+trav= tail;
+while(trav!=NULL && trav->prev!=NULL)
+{
+   print("%d-->",trav->data);
+   trav = trav->prev->prev;		
+}
+}
+\setlength{\parindent}{0pt}
+Options:
+1. 5-->3-->1
+2. 5-->4-->3-->2-->1
+3. \underline{5-->3-->}
+4. 1-->3-->5
+\setlength{\parindent}{0pt}
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+%\tableofcontents
+\pagebreak
+\end{document}
